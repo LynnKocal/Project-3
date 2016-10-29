@@ -96,12 +96,14 @@ fieldset	{
 	padding-right: 4px;
 }
 
-/**** Form Elements ****/
-.field-2 textarea,
-button[type="submit"]	{
-	width: 96%;
-	margin-right: 4px;
+.field-3	{
+	border: none;
+	width: 100%;
+	padding-left: 8px;
+	padding-right: 8px;
 }
+
+/**** Form Elements ****/
 
 .field-1 label	{
 	display: inline-block;
@@ -109,8 +111,17 @@ button[type="submit"]	{
 
 .field-2 label	{
 	display: inline-block;
-	line-height: 40px;
+	line-height: 20px;
 	margin-left: 4px;
+}
+
+.field-2 p	{
+	margin-bottom: 0;
+}
+
+.btn + .btn	{
+	display: inline-block;
+	margin-left: 12px;
 }
 
 input[type="text"],
@@ -122,7 +133,14 @@ textarea
 	background: rgba(0,0,128, .2);
 	width: 97%;
 	border-radius: 6px;
-	margin-bottom: 15px;
+}
+
+textarea
+
+.field-3 textarea,
+button[type="submit"]	{
+	margin-bottom: 0;
+	margin: 0 auto;
 }
 
 select	{
@@ -192,6 +210,13 @@ button	{
 	margin: 6px;
 }
 
+.field-3 label	{
+	width: 100px;
+	display: inline-block;
+	line-height: 2em;
+	color: rgba(0,0,128, .6);
+}
+
 /**** MEDIA QUERIES ****/
 
 @media (min-width: 768px) {
@@ -220,6 +245,9 @@ button	{
 	.field-2 p	{
 		margin-left: 12px;
 	}
+	.field-3 label	{
+		width: 120px;
+	}
 }
 @media (min-width: 1050px)	{
 	body	{
@@ -243,5 +271,8 @@ button	{
 		}
 		.field-2 label	{
 			line-height: 40px;
+		}
+		.field-3 label	{
+			width: 200px;
 		}
 }
