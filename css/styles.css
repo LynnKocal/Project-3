@@ -117,6 +117,7 @@ fieldset	{
 
 textarea,
 input[type="text"],
+input[type="tel"],
 input[type="email"]	{
 	display: inline-block;
 	line-height: 40px;
@@ -173,6 +174,16 @@ input[type="email"]::-webkit-input-placeholder {
 	text-align: right;
 }
 
+input[type="tel"]:-moz-placeholder	{
+	text-align: right;
+} 
+input[type="tel"]:-ms-input-placeholder	{
+	text-align: right;
+}
+input[type="tel"]::-webkit-input-placeholder {
+	text-align: right;
+}
+
 input[type="radio"],
 input[type="checkbox"]	{
 	display: inline;
@@ -205,6 +216,7 @@ button	{
 		width: 60%;
 	}
 	input[type="text"],
+	input[type="tel"],
 	input[type="email"],
 	select	{
 		float: right;
@@ -235,6 +247,7 @@ button	{
 			width: 70%;
 		}
 		input[type="text"],
+		input[type="tel"],
 		input[type="email"],
 		select	{
 			float: right;
